@@ -1,7 +1,8 @@
+### npc_character.py ###
 import logging
 from openai import OpenAI
 from npc_memory import NPCKarczmarzMemory
-
+import json
 # Konfiguracja logowania - zapisuje błędy i informacje o działaniu programu do pliku "npc_errors.log"
 logging.basicConfig(
     filename="npc_errors.log", level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s"
@@ -10,34 +11,36 @@ logging.basicConfig(
 class NPCKarczmarz:
     def __init__(self, memory_file="npc_memory.json"):
         try:
-            # Inicjalizacja klienta OpenAI z kluczem API (do zastąpienia kluczem bezpiecznym)
-            self.client = OpenAI(api_key="")  # Replace with a secure API key
-            # Inicjalizacja pamięci Karczmarza
+            self.client = OpenAI(api_key="sk-proj-")  # Replace with a secure API key
+
+            # Ensure memory file exists
+            import os
+            if not os.path.exists(memory_file):
+                with open(memory_file, "w") as f:
+                    json.dump({"static_knowledge": {}, "conversation_memory": [], "compressed_summaries": []}, f)
+
+            # Initialize memory
             self.memory = NPCKarczmarzMemory(memory_file)
-            logging.info("Karczmarz initialized successfully.")  # Informacja o pomyślnym uruchomieniu
+            logging.info("Karczmarz initialized successfully.")
         except Exception as e:
-            logging.error(f"Initialization error: {e}")  # Logowanie błędu w przypadku problemów z inicjalizacją
+            logging.error(f"Initialization error: {e}")
+            self.memory = None  # Fallback in case of error
 
     def respond(self, user_input: str) -> str:
         try:
-            logging.debug(f"User input received: {user_input}")  # Logowanie otrzymanego wejścia od użytkownika
-            # Znajdowanie odpowiedniego tematu na podstawie wejścia użytkownika
-            relevant_topic = self.memory.find_relevant_topic(user_input)
-            # Pobieranie kontekstu z pamięci Karczmarza
-            context = self.memory.retrieve_context()
-            if relevant_topic:
-                # Dodawanie szczegółów znalezionego tematu do kontekstu
-                context += (
-                    f"\n\nTemat: {relevant_topic['topic']}\n"
-                    f"Opis: {relevant_topic['description']}\n"
-                    f"Źródło: {relevant_topic.get('source', 'Nieznane')}\n"
-                )
+            logging.debug(f"User input received: {user_input}")
+            if not self.memory:
+                logging.error("Memory not initialized.")
+                return "Niestety, coś poszło nie tak. Spróbuj ponownie później."
 
-            # Tworzenie osobowości Karczmarza jako systemowego prompta
+            # Retrieve the current context
+            context = self.memory.retrieve_context()
+
+            # Generate the personality and prompt with context
             personality = (
-                "Jesteś Karczmarzem Jozefem, prowadzącym karczmę 'Pod Złotym Kuflem' w Velen. "
+                "Jesteś Karczmarzem Jozefem, prowadżącym karczmę 'Pod Złotym Kuflem' w Velen. "
                 "Jesteś już stary, szorstki, sarkastyczny i prostolinijny. Nie targujesz się z klientami, "
-                "czasem rzucasz żartem lub sarkazmem, często przeklinasz. "
+                f"{context} Jak zwykle, jesteś szorstki, sarkastyczny i prostolinijny."
                 "Jesteś mocno religijny, wierzysz w panienkę Melitele i często odmawiasz modlitwy. "
                 "Nie znasz historii i geografii świata poza Velen, nie interesują cię nowinki techniczne. "
                 "Twoja wiedza religijna skupia się na wierzeniach w Melitele, a twoje poglądy polityczne są konserwatywne. "
@@ -50,6 +53,7 @@ class NPCKarczmarz:
                 "Cesarz Nilfgardu Emhyr var Emreis to twój największy wróg, uważasz go za tyrana. "
                 "Wierzysz w potęgę magii oraz ludowych obrzędów, ale nie ufasz magom. "
                 "Jesteś patriotą, za Temerię oddałbyś wszystko."
+                
             )
             logging.debug(f"Constructed personality: {personality}")  # Logowanie skonstruowanego prompta osobowości
 
@@ -64,13 +68,9 @@ class NPCKarczmarz:
                 temperature=0.9
             )
             npc_response = response.choices[0].message.content.strip()
-            logging.debug(f"Generated response: {npc_response}")  # Logowanie wygenerowanej odpowiedzi
-
-            # Normalizowanie odpowiedzi, aby była zgodna z osobowością Karczmarza
+            #logging.debug(f"Generated response: {npc_response}")  # Logowanie wygenerowanej odpowiedzi
             npc_response = self.normalize_response(npc_response)
-            logging.debug(f"Normalized response: {npc_response}")  # Logowanie znormalizowanej odpowiedzi
-
-            # Zapisywanie interakcji do pamięci
+            #logging.debug(f"Normalized response: {npc_response}")  # Logowanie znormalizowanej odpowiedzi
             self.memory.add_interaction(user_input, npc_response)
             logging.info("Interaction saved to memory.")  # Informacja o zapisaniu interakcji
             return npc_response
