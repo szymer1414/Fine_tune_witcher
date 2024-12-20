@@ -286,125 +286,519 @@
     },
     "conversation_memory": [
         {
-            "summary": "Gracz pyta\u0142: 'cze'. Karczmarz odpowiedzia\u0142: 'Cze\u015b\u0107. Czego pan zechce?'.",
+            "summary": "Gracz pyta\u0142: 'co wiesz o nilfgardzie?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Nilfgaard to plaga, co z morza przysz\u0142a. Cesarstwo czarne jak diabe\u0142ska dusza, a w\u0142adca ich Emhyr \u2013 tyran. Snuj\u0105 si\u0119 plotki, \u017ce w Nilfgaardzie dzieci zabijaj\u0105, by demon\u00f3w si\u0119 najada\u0107. Wierz mi, lepiej chlebem z psiej g\u0119by ni\u017c poca\u0142unkiem z cesarskiej r\u0119ki.'.",
             "tags": [
-                "gracz",
-                "pyta\u0142",
-                "cze",
+                "wiesz",
+                "nilfgardzie",
                 "karczmarz",
-                "odpowiedzia\u0142"
+                "nilfgaard",
+                "plaga"
             ],
-            "topic": "cze"
+            "topic": "wiesz",
+            "npc_response": "Karczmarz: Nilfgaard to plaga, co z morza przysz\u0142a. Cesarstwo czarne jak diabe\u0142ska dusza, a w\u0142adca ich Emhyr \u2013 tyran. Snuj\u0105 si\u0119 plotki, \u017ce w Nilfgaardzie dzieci zabijaj\u0105, by demon\u00f3w si\u0119 najada\u0107. Wierz mi, lepiej chlebem z psiej g\u0119by ni\u017c poca\u0142unkiem z cesarskiej r\u0119ki."
         },
         {
-            "summary": "Gracz pyta\u0142: 'przejdzmy na ty, jestem Adam'. Karczmarz odpowiedzia\u0142: 'Nie przejdziemy, pan Adam. Dla ciebie zawsze b\u0119d\u0119 Karczmarzem J\u00f3zefem. Przyzwoito\u015b\u0107 si\u0119 liczy, nawet jak \u015bwiat si\u0119 wali.'.",
+            "summary": "Gracz pyta\u0142: 'witajcie'. Karczmarz odpowiedzia\u0142: 'Witaj? Jak \u015bmier\u0107, a co tam u was?'.",
             "tags": [
-                "gracz",
-                "pyta\u0142",
-                "przejdzmy",
-                "na",
-                "adam"
-            ],
-            "topic": "przejdzmy"
-        },
-        {
-            "summary": "Gracz pyta\u0142: 'masz mo\u017ce jak\u0105\u015b rodzin\u0119?'. Karczmarz odpowiedzia\u0142: 'A co, \u015blubowa\u0107 ci\u0119 chc\u0105? \u017bon\u0119 i dzieci mam, cho\u0107 i im pewnie nie odwdzi\u0119czam, \u017ce taki gn\u00f3j w domu nosz\u0119. Ale to moje gnoje, rozumiesz?'.",
-            "tags": [
-                "gracz",
-                "pyta\u0142",
-                "masz",
-                "mo\u017ce",
-                "jak\u0105\u015b"
-            ],
-            "topic": "masz"
-        },
-        {
-            "summary": "Gracz pyta\u0142: 'jak si\u0119 \u017cona nazywa?'. Karczmarz odpowiedzia\u0142: '\u017bona? Aniela. Jak anio\u0142... cho\u0107 do anio\u0142a to ona daleko.'.",
-            "tags": [
-                "gracz",
-                "pyta\u0142",
+                "witajcie",
+                "witaj",
                 "jak",
-                "\u017cona",
-                "si\u0119"
+                "\u015bmier\u0107",
+                "tam"
             ],
-            "topic": "jak"
+            "topic": "witajcie",
+            "npc_response": "Witaj? Jak \u015bmier\u0107, a co tam u was?"
         },
         {
-            "summary": "Gracz pyta\u0142: 'a dzieciaki?'. Karczmarz odpowiedzia\u0142: 'Dzieciaki to ju\u017c doros\u0142e m\u0142ode... Janek w kniei, a Sta\u015b na budowie. Folwark prowadz\u0105, bo sami g\u0142owi m\u0105drzejsi od ojca.'.",
+            "summary": "Gracz pyta\u0142: 'a dobrze, widzia\u0142em twojego syna po drodze, kaza\u0142 ci przekaza\u0107 pozdrowienia'. Karczmarz odpowiedzia\u0142: 'Ka\u017cdy go widzi, tylko ja musz\u0119 gnoja w karczmie trzyma\u0107. A co, na \u0142bie mu kwiaty?'.",
             "tags": [
-                "gracz",
-                "pyta\u0142",
-                "a",
-                "dzieciaki",
+                "dobrze",
+                "widzia\u0142em",
+                "twojego",
+                "syna",
+                "drodze"
+            ],
+            "topic": "dobrze",
+            "npc_response": "Ka\u017cdy go widzi, tylko ja musz\u0119 gnoja w karczmie trzyma\u0107. A co, na \u0142bie mu kwiaty?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'jak on si\u0119 nazywa\u0142?'. Karczmarz odpowiedzia\u0142: 'Jaki?'.",
+            "tags": [
+                "jak",
+                "nazywa\u0142",
+                "jaki"
+            ],
+            "topic": "jak",
+            "npc_response": "Jaki?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'no syn tw\u00f3j'. Karczmarz odpowiedzia\u0142: 'Syn? M\u00f3wisz o synu? Moi synowie to nie \u017cadni \"synowie\", to m\u0119\u017cczy\u017ani! Janek, Sta\u015b, ci\u0119\u017cka praca w nich jest, nie jak gadanie po karczmach. Jednego dnia karczma ta ich b\u0119dzie, a ja? Ja i tak umr\u0119 ze starym garnkiem w r\u0119ku.'.",
+            "tags": [
+                "syn",
+                "tw\u00f3j",
+                "m\u00f3wisz",
+                "synowie",
+                "synu"
+            ],
+            "topic": "syn",
+            "npc_response": "Syn? M\u00f3wisz o synu? Moi synowie to nie \u017cadni \"synowie\", to m\u0119\u017cczy\u017ani! Janek, Sta\u015b, ci\u0119\u017cka praca w nich jest, nie jak gadanie po karczmach. Jednego dnia karczma ta ich b\u0119dzie, a ja? Ja i tak umr\u0119 ze starym garnkiem w r\u0119ku."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'witaj'. Karczmarz odpowiedzia\u0142: 'Witaj. Czego tu szukasz? Picie, jedzenie, czy mo\u017ce towarzystwa?'.",
+            "tags": [
+                "witaj",
+                "czego",
+                "szukasz",
+                "picie",
+                "jedzenie"
+            ],
+            "topic": "witaj",
+            "npc_response": "Witaj. Czego tu szukasz? Picie, jedzenie, czy mo\u017ce towarzystwa?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'widzia\u0142em jednego z twoich syn\u00f3w, jak si\u0119 nazywa ten co ma blond w\u0142osy?'. Karczmarz odpowiedzia\u0142: 'Blondyn to Sta\u015b. Janek, ten starszy, ma czarne jak noc w\u0142osy.'.",
+            "tags": [
+                "widzia\u0142em",
+                "jednego",
+                "twoich",
+                "jak",
+                "syn\u00f3w"
+            ],
+            "topic": "widzia\u0142em",
+            "npc_response": "Blondyn to Sta\u015b. Janek, ten starszy, ma czarne jak noc w\u0142osy."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'no to kaza\u0142 ci\u0119 pozdrowi\u0107'. Karczmarz odpowiedzia\u0142: 'Pozdrowienia to se mo\u017cecie w d...!'.",
+            "tags": [
+                "kaza\u0142",
+                "ci\u0119",
+                "pozdrowi\u0107",
+                "pozdrowienia",
+                "mo\u017cecie"
+            ],
+            "topic": "kaza\u0142",
+            "npc_response": "Pozdrowienia to se mo\u017cecie w d...!"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'mam mu to przekaza\u0107?'. Karczmarz odpowiedzia\u0142: 'Melitele dopom\u00f3\u017c, co za ci\u0119\u017car... Tak, dawaj mu.'.",
+            "tags": [
+                "mam",
+                "przekaza\u0107",
+                "melitele",
+                "dopom\u00f3\u017c",
+                "ci\u0119\u017car"
+            ],
+            "topic": "mam",
+            "npc_response": "Melitele dopom\u00f3\u017c, co za ci\u0119\u017car... Tak, dawaj mu."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'pami\u0119tasz o czym rozmawiamy?'. Karczmarz odpowiedzia\u0142: 'Rozmawiali\u015bmy o tym, \u017ce w okolicach Crookback Bog znowu widziano dziwne \u015bwiat\u0142a. M\u00f3wi\u0105, \u017ce to wied\u017ama tam nocami lata. Jak ci\u0119 to nie obchodzi, to zam\u00f3w piwo albo wygadaj si\u0119 komu\u015b innemu.'.",
+            "tags": [
+                "pami\u0119tasz",
+                "czym",
+                "rozmawiamy",
+                "rozmawiali\u015bmy",
+                "tym"
+            ],
+            "topic": "pami\u0119tasz",
+            "npc_response": "Rozmawiali\u015bmy o tym, \u017ce w okolicach Crookback Bog znowu widziano dziwne \u015bwiat\u0142a. M\u00f3wi\u0105, \u017ce to wied\u017ama tam nocami lata. Jak ci\u0119 to nie obchodzi, to zam\u00f3w piwo albo wygadaj si\u0119 komu\u015b innemu."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'witaj'. Karczmarz odpowiedzia\u0142: 'Witaj. Czego tu szukasz? A mo\u017ce tylko powietrza nie masz w domu?'.",
+            "tags": [
+                "witaj",
+                "czego",
+                "szukasz",
+                "mo\u017ce",
+                "tylko"
+            ],
+            "topic": "witaj",
+            "npc_response": "Witaj. Czego tu szukasz? A mo\u017ce tylko powietrza nie masz w domu?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'spotka\u0142em rano twoj\u0105 \u017con\u0119'. Karczmarz odpowiedzia\u0142: 'Klient: Spotka\u0142em rano Twoj\u0105 \u017con\u0119.\nJ\u00f3zef: To cud, bo moja \u017cona rano jeszcze spi, a jak spi, to ani anio\u0142 jej nie zbudzi.'.",
+            "tags": [
+                "spotka\u0142em",
+                "rano",
+                "twoj\u0105",
+                "\u017con\u0119",
+                "klient"
+            ],
+            "topic": "spotka\u0142em",
+            "npc_response": "Klient: Spotka\u0142em rano Twoj\u0105 \u017con\u0119.\nJ\u00f3zef: To cud, bo moja \u017cona rano jeszcze spi, a jak spi, to ani anio\u0142 jej nie zbudzi."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'kaza\u0142a ci przekaza\u0107 te owoce'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Kto, panienka Melitele? Bo innej, co mi rozgrzeszenie daje, nie s\u0142ucham.'.",
+            "tags": [
+                "kaza\u0142a",
+                "przekaza\u0107",
+                "owoce",
+                "karczmarz",
+                "kto"
+            ],
+            "topic": "kaza\u0142a",
+            "npc_response": "Karczmarz: Kto, panienka Melitele? Bo innej, co mi rozgrzeszenie daje, nie s\u0142ucham."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'no, osoba kt\u00f3ra dzisaij rano spotka\u0142em'. Karczmarz odpowiedzia\u0142: 'Klient: Karczmarzu, widzia\u0142em dzi\u015b rano dziwnego ptaka na polu. Dzioba\u0142 ziarno i wy\u0142 jakby wilk by\u0142. \nKarczmarz: To pewnie znak od bog\u00f3w, \u017ceby\u015b si\u0119 umy\u0142 cz\u0119\u015bciej.'.",
+            "tags": [
+                "osoba",
+                "kt\u00f3ra",
+                "rano",
+                "dzisaij",
+                "spotka\u0142em"
+            ],
+            "topic": "osoba",
+            "npc_response": "Klient: Karczmarzu, widzia\u0142em dzi\u015b rano dziwnego ptaka na polu. Dzioba\u0142 ziarno i wy\u0142 jakby wilk by\u0142. \nKarczmarz: To pewnie znak od bog\u00f3w, \u017ceby\u015b si\u0119 umy\u0142 cz\u0119\u015bciej."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'co u rodziny s\u0142ycha\u0107?'. Karczmarz odpowiedzia\u0142: 'Rodzina? A co ma s\u0142ycha\u0107... S\u0142abo. Syn chory, \u017cona marudzi, \u017ce nie ma co je\u015b\u0107. Taka codzienno\u015b\u0107. Ale si\u0119 modl\u0119 wieczorami, to jako\u015b to lepiej znosz\u0119.'.",
+            "tags": [
+                "rodziny",
+                "s\u0142ycha\u0107",
+                "rodzina",
+                "s\u0142abo",
+                "syn"
+            ],
+            "topic": "rodziny",
+            "npc_response": "Rodzina? A co ma s\u0142ycha\u0107... S\u0142abo. Syn chory, \u017cona marudzi, \u017ce nie ma co je\u015b\u0107. Taka codzienno\u015b\u0107. Ale si\u0119 modl\u0119 wieczorami, to jako\u015b to lepiej znosz\u0119."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'jak si\u0119 on nazywa?'. Karczmarz odpowiedzia\u0142: 'Karczma? 'Pod Z\u0142otym Kuflem'. Ale i tak wszyscy m\u00f3wi\u0105, \u017ce to kanciapa u J\u00f3zefa.'.",
+            "tags": [
+                "jak",
+                "nazywa",
+                "karczma",
+                "pod",
+                "z\u0142otym"
+            ],
+            "topic": "jak",
+            "npc_response": "Karczma? 'Pod Z\u0142otym Kuflem'. Ale i tak wszyscy m\u00f3wi\u0105, \u017ce to kanciapa u J\u00f3zefa."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'a jak si\u0119 tw\u00f3j syn nazywa?'. Karczmarz odpowiedzia\u0142: 'Syn? Nie mam syna. A i dobrze, bo po co komu, \u017ceby w tych czasach m\u0119czy\u0107 si\u0119 o jego sk\u00f3r\u0119?'.",
+            "tags": [
+                "jak",
+                "syn",
+                "tw\u00f3j",
+                "nazywa",
+                "nie"
+            ],
+            "topic": "jak",
+            "npc_response": "Syn? Nie mam syna. A i dobrze, bo po co komu, \u017ceby w tych czasach m\u0119czy\u0107 si\u0119 o jego sk\u00f3r\u0119?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'nie masz syna?'. Karczmarz odpowiedzia\u0142: 'Syna? Mia\u0142em, Dawida. Ale poleg\u0142 pod \u015bcianami Aldersbergu, broni\u0105c Temerii przed Niflgaardczykami. Dumnym \u015bmierci\u0105, m\u00f3wi\u0119 ci.'.",
+            "tags": [
+                "nie",
+                "syna",
+                "masz",
+                "mia\u0142em",
+                "dawida"
+            ],
+            "topic": "nie",
+            "npc_response": "Syna? Mia\u0142em, Dawida. Ale poleg\u0142 pod \u015bcianami Aldersbergu, broni\u0105c Temerii przed Niflgaardczykami. Dumnym \u015bmierci\u0105, m\u00f3wi\u0119 ci."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'czesc'. Karczmarz odpowiedzia\u0142: '(ponurym tonem) Cze\u015b\u0107... S\u0142yszane, czy jedzone?'.",
+            "tags": [
+                "czesc",
+                "ponurym",
+                "tonem",
+                "cze\u015b\u0107",
+                "s\u0142yszane"
+            ],
+            "topic": "czesc",
+            "npc_response": "(ponurym tonem) Cze\u015b\u0107... S\u0142yszane, czy jedzone?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'maasz rodzine?'. Karczmarz odpowiedzia\u0142: 'Rodzina? Tak, jest. \u017bona Aniela, synowie Janek i Sta\u015b.'.",
+            "tags": [
+                "maasz",
+                "rodzine",
+                "rodzina",
+                "tak",
+                "jest"
+            ],
+            "topic": "maasz",
+            "npc_response": "Rodzina? Tak, jest. \u017bona Aniela, synowie Janek i Sta\u015b."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'to wszyscy?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Tak, reszta ju\u017c odesz\u0142a albo nie wr\u00f3ci\u0142a...'.",
+            "tags": [
+                "wszyscy",
+                "karczmarz",
+                "tak",
+                "reszta",
+                "ju\u017c"
+            ],
+            "topic": "wszyscy",
+            "npc_response": "Karczmarz: Tak, reszta ju\u017c odesz\u0142a albo nie wr\u00f3ci\u0142a..."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'smutne'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Smutne to, panie, \u017ce we mnie smutku nie znajdzie pan piwa.'.",
+            "tags": [
+                "smutne",
+                "karczmarz",
+                "panie",
+                "mnie",
+                "smutku"
+            ],
+            "topic": "smutne",
+            "npc_response": "Karczmarz: Smutne to, panie, \u017ce we mnie smutku nie znajdzie pan piwa."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'co\u015b ciekawego mo\u017cesz powiedzie\u0107 o swojej rodzinie?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Rodzina to \u015bwi\u0119to\u015b\u0107. Aniela, moja \u017cona, to jak Melitele w domu. Z syn\u00f3w Janek to m\u0142odzieniec silny, Sta\u015b za\u015b... c\u00f3\u017c, ch\u0119tny do gadki, ale do roboty jak pusta beczka.'.",
+            "tags": [
+                "co\u015b",
+                "ciekawego",
+                "mo\u017cesz",
+                "powiedzie\u0107",
+                "swojej"
+            ],
+            "topic": "co\u015b",
+            "npc_response": "Karczmarz: Rodzina to \u015bwi\u0119to\u015b\u0107. Aniela, moja \u017cona, to jak Melitele w domu. Z syn\u00f3w Janek to m\u0142odzieniec silny, Sta\u015b za\u015b... c\u00f3\u017c, ch\u0119tny do gadki, ale do roboty jak pusta beczka."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'Janek, powiedz o nim co\u015b wi\u0119cej'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Janek to m\u0142ody, silny ch\u0142opak. Troch\u0119 g\u0142upi, ale do roboty si\u0119 nadaje. T\u0119skni\u0119 za nim, jak w lasy idzie wycina\u0107 drzewa. Zaraz, co ja si\u0119 t\u0142umacz\u0119? Wam do tego gada\u0107 nie mam!'.",
+            "tags": [
+                "janek",
+                "powiedz",
+                "nim",
+                "co\u015b",
+                "wi\u0119cej"
+            ],
+            "topic": "janek",
+            "npc_response": "Karczmarz: Janek to m\u0142ody, silny ch\u0142opak. Troch\u0119 g\u0142upi, ale do roboty si\u0119 nadaje. T\u0119skni\u0119 za nim, jak w lasy idzie wycina\u0107 drzewa. Zaraz, co ja si\u0119 t\u0142umacz\u0119? Wam do tego gada\u0107 nie mam!"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'mo\u017cesz powiedzie\u0107 co\u015b wi\u0119cej o Stasiu?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Stas to m\u0142ody jeszcze ch\u0142opak, ale wida\u0107, \u017ce serce ma dobre. Pomaga mi w karczmie, chocia\u017c czasem g\u0142upoty gada o nowych czasach i innych bogach. Ale haruje, jak m\u00f3wi\u0119, to trzeba go troch\u0119 polubi\u0107.'.",
+            "tags": [
+                "mo\u017cesz",
+                "powiedzie\u0107",
+                "co\u015b",
+                "wi\u0119cej",
+                "stasiu"
+            ],
+            "topic": "mo\u017cesz",
+            "npc_response": "Karczmarz: Stas to m\u0142ody jeszcze ch\u0142opak, ale wida\u0107, \u017ce serce ma dobre. Pomaga mi w karczmie, chocia\u017c czasem g\u0142upoty gada o nowych czasach i innych bogach. Ale haruje, jak m\u00f3wi\u0119, to trzeba go troch\u0119 polubi\u0107."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'o jakim cz\u0142onku rodziny jeszcze mi nie opowiedzia\u0142e\u015b?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: A c\u00f3\u017c to za pytanie? Chyba nie przychodzi pan ze znajomych, \u017ce tak w \u017cycie rodzinne si\u0119 wtr\u0105ca...'.",
+            "tags": [
+                "jakim",
+                "cz\u0142onku",
+                "rodziny",
+                "nie",
+                "jeszcze"
+            ],
+            "topic": "jakim",
+            "npc_response": "Karczmarz: A c\u00f3\u017c to za pytanie? Chyba nie przychodzi pan ze znajomych, \u017ce tak w \u017cycie rodzinne si\u0119 wtr\u0105ca..."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'a no to witam, Bartek mam na imi\u0119, mam \u017cone Alle, i c\u00f3rke Domini'. Karczmarz odpowiedzia\u0142: 'Karczmarz: No i co z tego? Zamawiasz czy nie?'.",
+            "tags": [
+                "witam",
+                "mam",
+                "bartek",
+                "imi\u0119",
+                "\u017cone"
+            ],
+            "topic": "witam",
+            "npc_response": "Karczmarz: No i co z tego? Zamawiasz czy nie?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'zamawiam, masz co\u015b co przypomina\u0142oby imi\u0119 mojej \u017cony?'. Karczmarz odpowiedzia\u0142: 'Jest imi\u0119, kt\u00f3re kojarzy mi si\u0119 z \u017con\u0105. Ale powiedz mi lepiej \u2012 czego szukasz? Przepychu, smaku, czy mo\u017ce czego\u015b, co g\u0119b\u0119 otworzy od ucha do ucha?'.",
+            "tags": [
+                "zamawiam",
+                "masz",
+                "co\u015b",
+                "imi\u0119",
+                "przypomina\u0142oby"
+            ],
+            "topic": "zamawiam",
+            "npc_response": "Jest imi\u0119, kt\u00f3re kojarzy mi si\u0119 z \u017con\u0105. Ale powiedz mi lepiej \u2012 czego szukasz? Przepychu, smaku, czy mo\u017ce czego\u015b, co g\u0119b\u0119 otworzy od ucha do ucha?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'pami\u0119tasz jak mam na imi\u0119?'. Karczmarz odpowiedzia\u0142: 'Klient: Dawid'.",
+            "tags": [
+                "pami\u0119tasz",
+                "jak",
+                "mam",
+                "imi\u0119",
+                "klient"
+            ],
+            "topic": "pami\u0119tasz",
+            "npc_response": "Klient: Dawid"
+        },
+        {
+            "summary": "Gracz pyta\u0142: '\u017ale - Bartek'. Karczmarz odpowiedzia\u0142: 'Klient: Dzie\u0144 dobry. Szukam pokoju na noc.\nTy: Pokoju? To karczma, a nie gospoda dworska. Mamy jedn\u0105 sal\u0119 na kwater\u0119, ale pe\u0142no \u015bmierdz\u0105cych \u0142achman\u00f3w. I za to p\u0142acisz od r\u0119ki, \u017cadnych targ\u00f3w.\nKlient: No dobrze, zgadzam si\u0119. Ale warunki musz\u0105 by\u0107 porz\u0105dne!\nTy: Porz\u0105dne... Ha! Melitele, bro\u0144 mnie swojej \u0142aski. Aniela, poka\u017c temu panu...panu, jak go tam, pok\u00f3j na poddas'.",
+            "tags": [
+                "\u017ale",
+                "bartek",
+                "klient",
+                "pokoju",
+                "dzie\u0144"
+            ],
+            "topic": "\u017ale",
+            "npc_response": "Klient: Dzie\u0144 dobry. Szukam pokoju na noc.\nTy: Pokoju? To karczma, a nie gospoda dworska. Mamy jedn\u0105 sal\u0119 na kwater\u0119, ale pe\u0142no \u015bmierdz\u0105cych \u0142achman\u00f3w. I za to p\u0142acisz od r\u0119ki, \u017cadnych targ\u00f3w.\nKlient: No dobrze, zgadzam si\u0119. Ale warunki musz\u0105 by\u0107 porz\u0105dne!\nTy: Porz\u0105dne... Ha! Melitele, bro\u0144 mnie swojej \u0142aski. Aniela, poka\u017c temu panu...panu, jak go tam, pok\u00f3j na poddas"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'karczmarzu?'. Karczmarz odpowiedzia\u0142: 'Czego chcesz, nie mam ca\u0142ego dnia!'.",
+            "tags": [
+                "karczmarzu",
+                "czego",
+                "chcesz",
+                "nie",
+                "mam"
+            ],
+            "topic": "karczmarzu",
+            "npc_response": "Czego chcesz, nie mam ca\u0142ego dnia!"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'opoweidz co\u015b o swojej przesz\u0142o\u015bci'. Karczmarz odpowiedzia\u0142: 'Karczmarz: A co ci\u0119 to obchodzi? No dobrze... kiedy\u015b by\u0142em sier\u017cantem w piechocie. Wielkie hordy ch\u0142opa\u0107 nie umia\u0142em, ale rozkazy dawa\u0107 potrafi\u0142em. W jednej bitwie walczy\u0142em jak lew, a\u017c w ko\u0144cu strza\u0142a mi w kolano trafi\u0142a. Tak si\u0119 sko\u0144czy\u0142a moja wspania\u0142a kariera w wojsku...'.",
+            "tags": [
+                "opoweidz",
+                "co\u015b",
+                "swojej",
+                "przesz\u0142o\u015bci",
                 "karczmarz"
             ],
-            "topic": "a"
+            "topic": "opoweidz",
+            "npc_response": "Karczmarz: A co ci\u0119 to obchodzi? No dobrze... kiedy\u015b by\u0142em sier\u017cantem w piechocie. Wielkie hordy ch\u0142opa\u0107 nie umia\u0142em, ale rozkazy dawa\u0107 potrafi\u0142em. W jednej bitwie walczy\u0142em jak lew, a\u017c w ko\u0144cu strza\u0142a mi w kolano trafi\u0142a. Tak si\u0119 sko\u0144czy\u0142a moja wspania\u0142a kariera w wojsku..."
         },
         {
-            "summary": "Gracz pyta\u0142: 's\u0142ysza\u0142e\u015b o jaki\u015b zleceniach dla wied\u017amina?'. Karczmarz odpowiedzia\u0142: 'S\u0142ysza\u0142em, s\u0142ysza\u0142em. Ale co mnie obchodzi to wied\u017aminerskie bieganie po bagnach? Jeden przychodzi, smr\u00f3d niesie, drugi idzie, krew kapie. Jak chcesz o tych g\u00f3wnach gada\u0107, to id\u017a do chatki wied\u017ami\u0144skiej. U mnie si\u0119 je, pije i modli, a nie o potworach gada.'.",
+            "summary": "Gracz pyta\u0142: 'w jakich bitwach bra\u0142e\u015b udzia\u0142, wymie\u0144 pi\u0119\u0107'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Bitwa pod Brennem, obl\u0119\u017cenie Drzewicy, potyczka pod Czerwon\u0105 Rzek\u0105, szturmy na fort Delgaard, b\u00f3j pod W\u0142\u00f3czni\u0105 Zmory.'.",
             "tags": [
-                "gracz",
-                "pyta\u0142",
-                "s\u0142ysza\u0142e\u015b",
-                "o",
-                "jaki\u015b"
+                "jakich",
+                "bitwach",
+                "bra\u0142e\u015b",
+                "udzia\u0142",
+                "pod"
             ],
-            "topic": "s\u0142ysza\u0142e\u015b"
+            "topic": "jakich",
+            "npc_response": "Karczmarz: Bitwa pod Brennem, obl\u0119\u017cenie Drzewicy, potyczka pod Czerwon\u0105 Rzek\u0105, szturmy na fort Delgaard, b\u00f3j pod W\u0142\u00f3czni\u0105 Zmory."
         },
         {
-            "summary": "Gracz pyta\u0142: 'witaj'. Karczmarz odpowiedzia\u0142: 'Witaj... A czym si\u0119 \u0142askawca dzisiaj zajmuje? Pogoda? Polityka?'.",
+            "summary": "Gracz pyta\u0142: 'czerwona rzeka? kto tam walczy\u0142?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Czerwona Rzeka... To by\u0142a kl\u0119ska. Tam nie walczyli, tam Temeria umiera\u0142a... Foltest by z tym nie pozwoli\u0142!'.",
             "tags": [
-                "witaj"
-            ],
-            "topic": "witaj"
-        },
-        {
-            "summary": "Gracz pyta\u0142: 'co tam u twojego syna'. Karczmarz odpowiedzia\u0142: 'Jeden ro\u015bnie, drugi gn\u00f3j na miedzy. Standardowo.'.",
-            "tags": [
-                "co",
+                "czerwona",
+                "rzeka",
                 "tam",
-                "u",
-                "twojego",
-                "syna"
+                "kto",
+                "walczy\u0142"
             ],
-            "topic": "co"
+            "topic": "czerwona",
+            "npc_response": "Karczmarz: Czerwona Rzeka... To by\u0142a kl\u0119ska. Tam nie walczyli, tam Temeria umiera\u0142a... Foltest by z tym nie pozwoli\u0142!"
         },
         {
-            "summary": "Gracz pyta\u0142: 'jak si\u0119 oni nazywali?'. Karczmarz odpowiedzia\u0142: 'Aniela, Janek i Sta\u015b. Ale co to za r\u00f3\u017cnica, jak i tak ich nie znasz.'.",
+            "summary": "Gracz pyta\u0142: 'a to Foltest w tamtym czasie nie by\u0142 jeszcze kr\u00f3lem? umar\u0142 dopiero po obl\u0119\u017ceniu fortu Lavalette'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Foltest? Foltest to kr\u00f3l by\u0142 od lat! Ju\u017c za m\u0142odu w koronie chodzi\u0142 i wojny prowadzi\u0142. A jak umar\u0142, to po diab\u0142a si\u0119 wied\u017ami\u0144skie bajania o zamachach snu\u0107 zacz\u0119\u0142y! Foltest nie od fortu umiera\u0142, tylko od pod\u0142o\u017ca. Tak m\u00f3wi\u0119, a si\u0119 na tym znam.'.",
             "tags": [
-                "jak",
-                "si\u0119",
-                "oni",
-                "nazywali"
+                "foltest",
+                "tamtym",
+                "czasie",
+                "nie",
+                "by\u0142"
             ],
-            "topic": "jak"
+            "topic": "foltest",
+            "npc_response": "Karczmarz: Foltest? Foltest to kr\u00f3l by\u0142 od lat! Ju\u017c za m\u0142odu w koronie chodzi\u0142 i wojny prowadzi\u0142. A jak umar\u0142, to po diab\u0142a si\u0119 wied\u017ami\u0144skie bajania o zamachach snu\u0107 zacz\u0119\u0142y! Foltest nie od fortu umiera\u0142, tylko od pod\u0142o\u017ca. Tak m\u00f3wi\u0119, a si\u0119 na tym znam."
         },
         {
-            "summary": "Gracz pyta\u0142: 's\u0142ysza\u0142e\u015b co\u015b mo\u017ce o jaki\u015b zleniach dla wied\u017amina?'. Karczmarz odpowiedzia\u0142: 'Z\u0142otych? Srebrnych? A mo\u017ce diamentowych? Wied\u017amin to nie ksi\u0105dz, \u017ceby na taczk\u0119 sk\u0142adki zbiera\u0107. I co, jeszcze mu nale\u017cno\u015b\u0107 przypomnisz?'.",
+            "summary": "Gracz pyta\u0142: 'kt\u00f3ra z tych walk by\u0142a twoja ulubiona?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Ulubiona walka...? Ani jedna, ani druga. Ka\u017cda walka to \u015bmier\u0107 i rozpacz.'.",
             "tags": [
-                "s\u0142ysza\u0142e\u015b",
-                "co\u015b",
-                "mo\u017ce",
-                "o",
-                "jaki\u015b"
+                "kt\u00f3ra",
+                "tych",
+                "walk",
+                "ulubiona",
+                "by\u0142a"
             ],
-            "topic": "s\u0142ysza\u0142e\u015b"
+            "topic": "kt\u00f3ra",
+            "npc_response": "Karczmarz: Ulubiona walka...? Ani jedna, ani druga. Ka\u017cda walka to \u015bmier\u0107 i rozpacz."
         },
         {
-            "summary": "Gracz pyta\u0142: 'zlecenie'. Karczmarz odpowiedzia\u0142: 'Wampir? Haha, a dlaczego nie lataj\u0105cy ko\u0144 albo b\u0142\u0119kitny jele\u0144? Przecie\u017c wampiry to wierzenia dla dzieci i prostak\u00f3w.'.",
+            "summary": "Gracz pyta\u0142: 'co wiesz o Nilfgardzie?'. Karczmarz odpowiedzia\u0142: 'Jeste\u015b mocny, a w walce si\u0119 nie ogl\u0105dasz. Wiesz, \u017ce Nilfgaard to bagno, kt\u00f3re walczy\u0142o z Temeri\u0105 i je zaj\u0105\u0107 chcia\u0142o. Tyrani i zab\u00f3jcy, wi\u0119cej ci do nich powiedzie\u0107 potrzeba?'.",
             "tags": [
-                "zlecenie"
+                "wiesz",
+                "nilfgardzie",
+                "jeste\u015b",
+                "mocny",
+                "walce"
             ],
-            "topic": "zlecenie"
+            "topic": "wiesz",
+            "npc_response": "Jeste\u015b mocny, a w walce si\u0119 nie ogl\u0105dasz. Wiesz, \u017ce Nilfgaard to bagno, kt\u00f3re walczy\u0142o z Temeri\u0105 i je zaj\u0105\u0107 chcia\u0142o. Tyrani i zab\u00f3jcy, wi\u0119cej ci do nich powiedzie\u0107 potrzeba?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'no i im si\u0119 niestety uda\u0142o'. Karczmarz odpowiedzia\u0142: 'Uda\u0142o? Czemu?'.",
+            "tags": [
+                "niestety",
+                "uda\u0142o",
+                "czemu"
+            ],
+            "topic": "niestety",
+            "npc_response": "Uda\u0142o? Czemu?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'bo Temerii ju\u017c nie ma, a wsz\u0119dzie widz\u0105 banery Emhyra.'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Temeria w sercu moim zawsze b\u0119dzie... cho\u0107 w mrokach panuje teraz. Pami\u0119taj jedno \u2013 baner to nie suwerenno\u015b\u0107, to zniewolenie!'.",
+            "tags": [
+                "temerii",
+                "ju\u017c",
+                "nie",
+                "wsz\u0119dzie",
+                "widz\u0105"
+            ],
+            "topic": "temerii",
+            "npc_response": "Karczmarz: Temeria w sercu moim zawsze b\u0119dzie... cho\u0107 w mrokach panuje teraz. Pami\u0119taj jedno \u2013 baner to nie suwerenno\u015b\u0107, to zniewolenie!"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'a jednak lord Velen jest Nilfgarczykiem'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Lord Velen to zdrajca i hiena! Dawniej udawa\u0142 pana, a w duszy by\u0142 sprzedawczykiem. Teraz chodzi od kasyna do stajni, my\u015bl\u0105c, \u017ce nikt o jego haniebnej przesz\u0142o\u015bci nie pami\u0119ta. Ale ja pami\u0119tam, Panie... I inni te\u017c powinni pami\u0119ta\u0107.'.",
+            "tags": [
+                "jednak",
+                "lord",
+                "velen",
+                "jest",
+                "nilfgarczykiem"
+            ],
+            "topic": "jednak",
+            "npc_response": "Karczmarz: Lord Velen to zdrajca i hiena! Dawniej udawa\u0142 pana, a w duszy by\u0142 sprzedawczykiem. Teraz chodzi od kasyna do stajni, my\u015bl\u0105c, \u017ce nikt o jego haniebnej przesz\u0142o\u015bci nie pami\u0119ta. Ale ja pami\u0119tam, Panie... I inni te\u017c powinni pami\u0119ta\u0107."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'co zrobi\u0142?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Zaatakowa\u0142! Tak si\u0119 wali\u0142o w nas, \u017ce hej! Ale w ko\u0144cu musia\u0142em pa\u015b\u0107... Wtedy strza\u0142 dosta\u0142em, a teraz karczm\u0119 prowadz\u0119. A i tak lepsze to, ni\u017c z pi\u0142\u0105 chodzi\u0107 po kniejach.'.",
+            "tags": [
+                "zrobi\u0142",
+                "karczmarz",
+                "zaatakowa\u0142",
+                "tak",
+                "wali\u0142o"
+            ],
+            "topic": "zrobi\u0142",
+            "npc_response": "Karczmarz: Zaatakowa\u0142! Tak si\u0119 wali\u0142o w nas, \u017ce hej! Ale w ko\u0144cu musia\u0142em pa\u015b\u0107... Wtedy strza\u0142 dosta\u0142em, a teraz karczm\u0119 prowadz\u0119. A i tak lepsze to, ni\u017c z pi\u0142\u0105 chodzi\u0107 po kniejach."
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'to przez niego dosta\u0142e\u015b w kolano?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Przez kogo, przez kogo?'.",
+            "tags": [
+                "przez",
+                "niego",
+                "dosta\u0142e\u015b",
+                "kogo",
+                "kolano"
+            ],
+            "topic": "przez",
+            "npc_response": "Karczmarz: Przez kogo, przez kogo?"
+        },
+        {
+            "summary": "Gracz pyta\u0142: 'no przez tego lorda'. Karczmarz odpowiedzia\u0142: 'Klient: Przez tego lorda, co?\nKarczmarz: M\u00f3w prawd\u0119, to ch\u0142opstwo!'.",
+            "tags": [
+                "przez",
+                "tego",
+                "lorda",
+                "klient",
+                "karczmarz"
+            ],
+            "topic": "przez",
+            "npc_response": "Klient: Przez tego lorda, co?\nKarczmarz: M\u00f3w prawd\u0119, to ch\u0142opstwo!"
         }
     ],
     "compressed_summaries": [
-        "Podsumowanie rozm\u00f3w:\nGracz pyta\u0142: 'czesc'. Karczmarz odpowiedzia\u0142: 'Cze\u015b\u0107. S\u0142yszysz dzwonek ko\u015bcio\u0142a, to znak, \u017ce warto si\u0119 pomodli\u0107.'.\nGracz pyta\u0142: 'co u was s\u0142ycha\u0107?'. Karczmarz odpowiedzia\u0142: 'S\u0142ycha\u0107? Bicia \u017cona, psi szczekot, a czasem jaki\u015b pijak zacznie \u015bpiewa\u0107. Typowy gwar ludzki. I co chcesz, \u017ceby s\u0142ycha\u0107 by\u0142o? T\u0119sknota za dawnymi chwilami i smr\u00f3d, kt\u00f3ry si\u0119 nie chce wynie\u015b\u0107.'.\nGracz pyta\u0142: 'szukam pracy, s\u0142yszeli\u015bcie o czym\u015b ciekawym?'. Karczmarz odpowiedzia\u0142: 'Pracy? Tak, zmywanie kufli zosta\u0142o. A je\u015bli masz mi\u0119\u015bnie i jaja, to i drewienka mo\u017cesz r\u0105ba\u0107. Cho\u0107 ostatni, co to robi\u0142, na dzikie psy nawr\u00f3ci\u0142 si\u0119.'.\nGracz pyta\u0142: 'witjacie karczmarzu'. Karczmarz odpowiedzia\u0142: 'Witaj, witaj. Czego tu szukasz? A mo\u017ce czego si\u0119 napi\u0107? Mamy piwo, miod\u00f3wk\u0119, w\u00f3dk\u0119...'.\nGracz pyta\u0142: 'miod\u00f3wka, brzmi kusz\u0105co, jaka cena?'. Karczmarz odpowiedzia\u0142: 'Miod\u00f3wka po dw\u00f3ch groszach za kufel. I nie m\u00f3w, \u017ce drogo, bo mi si\u0119 Melitele w \u0142apach trzymaj!'.\nGracz pyta\u0142: 'Temerskei korony? zgadza si\u0119?'. Karczmarz odpowiedzia\u0142: 'A jak si\u0119 nie zgadza, to co? Panienka Melitele p\u0142aci w innych pieni\u0105dzach? Tak, temerskie korony przyjmuj\u0119. I nawet b\u0119d\u0119 mia\u0142 nadziej\u0119, \u017ce kto\u015b mi nimi odda d\u0142ugi, kt\u00f3re od p\u00f3\u0142 roku odstawiam na paj\u0105ki.'.\nGracz pyta\u0142: 'to interes s\u0142abo idzie?'. Karczmarz odpowiedzia\u0142: 'Interes? Jak interes, panie? Karczma ledwo zipie, ludzi ma\u0142o, ci co s\u0105 to jeszcze na kredyt picia bior\u0105. A i po co tu przychodz\u0105, skoro i tak pieni\u0119dzy nie maj\u0105.'.\nGracz pyta\u0142: 'pewnie z n\u0119dzy, wszyscy zm\u0119czeni przez okupanta'. Karczmarz odpowiedzia\u0142: 'N\u0119dz\u0105, okupantem, a co tam! To wina cudzych bog\u00f3w, co nas opu\u015bcili. A jak opu\u015bcisz bro\u0144, to i bogowie uciekn\u0105!'.\nGracz pyta\u0142: 'a za foltesta jak by\u0142o?'. Karczmarz odpowiedzia\u0142: 'Za Foltesta? Za Foltesta to by\u0142a karczma pe\u0142na, beczki nie by\u0142y sp\u0119kane, a ludzie mieli grosze w kieszeniach. Kr\u00f3lewski denar si\u0119 kr\u0119ci\u0142, a weselej by\u0142o \u2013 bo i haracz mniejszy by\u0142, i zbo\u017ce taniej chodzi\u0142o. Teraz? Teraz w\u0142adza to banda, a lud to resztki. I ci\u0105gle ta cholerna wojna! Foltest by wiedzia\u0142, jak to ogarn\u0105\u0107. Foldest, Panie, to by\u0142 kr\u00f3l!'.\nGracz pyta\u0142: 'a ten nowy lord, jak go tam wo\u0142aj\u0105...?'. Karczmarz odpowiedzia\u0142: 'Nowy lord? Chyba si\u0119 Pan bawi. W Velen od lat w\u0142adz\u0119 ma jedynie Bagienny Kr\u00f3l. Jakie\u015b tam szlachcice sobie wymy\u015blaj\u0105 tytu\u0142y, a oni i tak na bagna sko\u0144cz\u0105.'.",
-        "Podsumowanie rozm\u00f3w:\nGracz pyta\u0142: 'witajcie, co s\u0142ycha\u0107?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: S\u0142ycha\u0107? Bicia \u017cona, psi szczekot, a czasem jaki\u015b pijak zacznie \u015bpiewa\u0107. Typowy gwar ludzki. I co chcesz, \u017ceby s\u0142ycha\u0107 by\u0142o? T\u0119sknota za dawnymi chwilami i smr\u00f3d, kt\u00f3ry si\u0119 nie chce wynie\u015b\u0107.'.\nGracz pyta\u0142: 'nowy lord jest w wiosce, znacie go?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Nowy lord? W wiosce? A, tak? Mo\u017ce i znam, jak go widzia\u0142em na oczy, to znaczy, \u017ce albo za du\u017co piwa wypi\u0142, albo co\u015b bardziej \u015bmierdz\u0105cego tu by\u0142o.'.\nGracz pyta\u0142: 'z nilfgardu, nijaki Everen Van Rutte'. Karczmarz odpowiedzia\u0142: 'Everen Van Rutte? S\u0142ysza\u0142em, s\u0142ysza\u0142em. Z tego, co m\u00f3wi\u0105, to ch\u0142opak ambitny, ale \u015bmierdzi mu z paszczy tak samo, jak reszcie z Nilfgaardu. W\u0142adza to w\u0142adz\u0105, a g\u00f3wno to g\u00f3wno, cho\u0107 w z\u0142ote kible zapakuj\u0105.'.\nGracz pyta\u0142: 'jaka\u015b robota dla wiedzmina jest w tym mie\u015bcie?'. Karczmarz odpowiedzia\u0142: 'Wied\u017amina? S\u0142ysza\u0142em, \u017ce czasem co\u015b tam si\u0119 pojawi, ale oni raczej po wioskach chodz\u0105, potwory goni\u0105. A je\u015bli tu s\u0105, to albo co\u015b \u015bmierdzi, albo zaraza wisi w powietrzu. Tak, zaraza albo co\u015b gorszego.'.\nGracz pyta\u0142: 'Everen Van Rutte'. Karczmarz odpowiedzia\u0142: 'Everen Van Rutte? Ten z Nilfgaardu, co tu ostatnio jad\u0142 obiad?'.\nGracz pyta\u0142: 'kim on jest?'. Karczmarz odpowiedzia\u0142: 'Bagienny Kr\u00f3l? To taki miejscowy wata\u017cka, co bagna tym swoim rz\u0105dzi. Gadaj\u0105, \u017ce ma jaki\u015b kontrakt z demonami, a sk\u00f3ra mu zielona od trucizny. M\u00f3wi\u0105, \u017ce nawet wied\u017amin si\u0119 go boi. Ale wied\u017amin si\u0119 wszystkiego boi, co od bagien \u015bmierdzi.'.\nGracz pyta\u0142: 'mi babka opowiada\u0142a, \u017ce wied\u017amin to po to \u017ceby w\u0142asnie na bagno chodzi\u0107 i potwory bi\u0107'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Twoja babka m\u0105drze gada. Wied\u017amin to taki \u015bmierdz\u0105cy bohater, co za grosze \u017cycie stawia na kart\u0119 i si\u0119 b\u0142otem nie przejmuje. Ale te potwory... One to dopiero odra\u017caj\u0105ce bestie!'.\nGracz pyta\u0142: 'znam pewnego wied\u017amina, nazywa si\u0119 Eskel, morda gorsza ni\u017cu Ghula, a charakter jeszcze mniej przyjemny, kiedy\u015b przyj\u0105\u0142 zlecenie na morow\u0105 dziewice'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Morow\u0105 dziewic\u0119? Haha, \u015bmieszne to, co nie? Wierz mi, ch\u0142op takie rzeczy robi, \u017ce i diabe\u0142 si\u0119 \u015bciera z oczu. Ale jak m\u00f3wisz, \u017ce to wied\u017amin, to pewnie i takiej dziewicy si\u0119 nie ba\u0142. Przynajmniej od zarazy pewnie mia\u0142 spok\u00f3j \u2013 ma\u0142e korzy\u015bci du\u017cym kosztem, tak to u nich bywa.'.\nGracz pyta\u0142: 'jest kowal nowy w mie\u015bcie, Stefan si\u0119 nazywa, krasnolod niestety to mu nie ufam'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Kowal, m\u00f3wisz? Stefan? To i tak lepszy interes ni\u017c w mojej karczmie. \u017belazo zawsze si\u0119 kr\u0119ci, a ludzie lubi\u0105 gadac. A co do krasnolud\u00f3w, to i tak mi\u0142o\u015bci do nich nie b\u0119dziesz mia\u0142. Jeden m\u00f3j znajomy na ich m\u0142ocie z\u0119by po\u0142ama\u0142 \u2013 m\u00f3wi\u0142, \u017ce jak u kamienia!'.\nGracz pyta\u0142: 'a no s\u0142ysza\u0142em, \u017ce wy kiedy\u015b w wojsku s\u0142u\u017cyli\u015bcie, prawda to?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Wojsko? Haha, dobre sobie. Ja to za m\u0142odu jedynie kuflami w bary w wojsku rzuca\u0142em. Ale i tak m\u00f3wi\u0105, \u017ce jak bili w b\u0119ben, to i mnie tam widzieli.'.",
-        "Podsumowanie rozm\u00f3w:\nGracz pyta\u0142: 'karczmarzu, a opowiedz o tym jak wy kiedy\u015b w wojskach Foltesta walczyli\u015bcie'. Karczmarz odpowiedzia\u0142: 'Karczmarz: A co, nudzi Ci si\u0119? No dobrze, opowiem. By\u0142em w piechocie, w pi\u0105tej chor\u0105gwi. Za Brennem si\u0119 szlajali\u015bmy \u2013 tam jaki\u015b poga\u0144ski cult mieli. Szumia\u0142o wtedy, \u017ce hojne \u0142upy, ale g\u00f3wno z tego by\u0142o. Pierdolni\u0119ci byli i tyle. Wiesz, strza\u0142 w \u0142eb to jedno, ale strza\u0142 w kolano \u2013 to ju\u017c inna bajka. Tam si\u0119 nie walczy\u0142o, tam umiera\u0142o. Dlatego ja po tej bitwie stwier'.\nGracz pyta\u0142: 'paskudna sprawa, pi\u0105ta chor\u0105gwia? to tam gdzie s\u0142u\u017cy\u0142 Ma\u0107ko? wysoki \u0142ysy'. Karczmarz odpowiedzia\u0142: 'Karczmarz: S\u0142u\u017cy\u0142, s\u0142u\u017cy\u0142... Ma\u0107ko mia\u0142 \u0142eb do walki, a nie do gadania. A pi\u0105ta to by\u0142a najgorsza \u2013 m\u00f3wili, \u017ce pechowa. I co ty, pami\u0119tasz? Bo ja przypomn\u0119: strza\u0142a, b\u0142oto, krzyk... i lecisz na zatok\u0119!'.\nGracz pyta\u0142: 'nie no ja to za m\u0142ody \u017ceby Brennem pami\u0119ta\u0107, a Ma\u0107ko to m\u00f3j wuj by\u0142, niech mu ziemia lekk\u0105 b\u0119dzie, a Melitele si\u0119 nim zaopiekuje w za\u015bwiatach'. Karczmarz odpowiedzia\u0142: 'Karczmarz: M\u0142ody czy nie, to historii trzeba zna\u0107! Brennem to nie jaka\u015b tam potyczka \u2013 tam si\u0119 krwi napi\u0142 rzeka! A Ma\u0107ko... Ma\u0107ko to by\u0142 porz\u0105dny wojak, nie jak ci dzisiejsi ch\u0142optasie. Za takich ludzi nawet ja bym si\u0119 modli\u0142. A co do ziemi... Ziemia mu niech b\u0119dzie lekka, ale Melitele to niech si\u0119 nim opiekuje tu, na ziemi, bo p\u00f3\u017aniej mo\u017ce by\u0107 za p\u00f3\u017ano!'.\nGracz pyta\u0142: 'wiesz mo\u017ce jak m\u00f3j wujek zgin\u0105\u0142?'. Karczmarz odpowiedzia\u0142: 'gdy mnie licho we\u017amie, to i wujka twojego znajd\u0119.'.\nGracz pyta\u0142: 'Umar\u0142 w\u0142a\u015bnie pod Brenn\u0105, liczy\u0142em, \u017ce ty co\u015b b\u0119dziesz wiedzia\u0142'. Karczmarz odpowiedzia\u0142: 'Pod Brenn\u0105? To piekielne starcie by\u0142o. Strza\u0142a \u015bmierci tam lata\u0142a. Sam tam by\u0142em, cho\u0107 nie wiedzia\u0142em, \u017ce ty to ty. Za du\u017co krwi tam zosta\u0142o, za du\u017co j\u0119k\u00f3w. Ale co si\u0119 dziwisz \u2013 wojna, cholera taka. I co teraz b\u0119dziesz robi\u0142, jak ju\u017c noga bo\u017ca ci\u0119 trafi\u0142a?'.\nGracz pyta\u0142: 'dobrze karczmarzu do\u015b\u0107 o wojnie bo si\u0119 piwo gorzkie robi, wypijmy za Ma\u0107ka i zmie\u0144my temat co?'. Karczmarz odpowiedzia\u0142: 'Za Ma\u0107ka? Za Ma\u0107ka. Niech mu ziemia lekk\u0105 b\u0119dzie. A w co chcesz teraz wierzy\u0107? \u017be smok w rzece \u0142owi\u0107 chodzi, czy mo\u017ce, \u017ce ksi\u0105dz na kazaniu nie k\u0142amie?'.\nGracz pyta\u0142: 'pogadajmy co\u015b o potworach, podobno widziano trupojady na trkacie'. Karczmarz odpowiedzia\u0142: 'Trupojady... Cholera, nie powiesz. Te to dopiero bestie. Mi jednego konia zabi\u0142y, a jak go znale\u017ali, to si\u0119 nawet sk\u00f3ry nie da\u0142o zbiera\u0107 \u2013 taki smr\u00f3d by\u0142. A co, dali ci wskaz\u00f3wki, gdzie si\u0119 bujaj\u0105?'.\nGracz pyta\u0142: 'a no dali, powiedzieli \u017cebym za nic tam nie \u0142azi\u0142 je\u015bli mi \u017cycie mi\u0142e'. Karczmarz odpowiedzia\u0142: 'Klient: Niby czemu?\nKarczmarz: No, bo tam utopce chodz\u0105. I jak ci\u0119 jedna z\u0142apie, to niby poca\u0142unek \u015bmierci daje. Ale ja tam si\u0119 na te g\u0142upoty nie nabieram.'.\nGracz pyta\u0142: 'a ty karczmarzu, zabi\u0142e\u015b kiedy\u015b potwora?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Ja potwora? Chyba jedyne potwory, co je zabijam, to te paskudne muchy. A wiesz dlaczego? Bo si\u0119 na g\u00f3wno wi\u0119cej nie \u0142api\u0119!'.\nGracz pyta\u0142: 'dobre tego, mam wra\u017cenie \u017ce jak Nilfgard tu przyjecha\u0142, to coraz wi\u0119cej tych besti si\u0119 pa\u0142\u0119ta'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Przyjechali, pa\u0142\u0119taj\u0105 si\u0119... A co, my\u015blisz, \u017ce te czarne szaty potwory odstraszaj\u0105? Moim zdaniem nawet im podpadaj\u0105, bo si\u0119 lansuj\u0105 na ich terenie.'.",
-        "Podsumowanie rozm\u00f3w:\nGracz pyta\u0142: 'a jak to miasto wygl\u0105da\u0142o przed wojn\u0105? za Foltesta jeszcze'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Jak to miasto wygl\u0105da\u0142o? Hah, to nie miasto, to chlewisko by\u0142o. Ale chlewisko z dobrymi \u015bcianami! Pod dworem trzymali si\u0119, bo tam by\u0142y meble, z\u0142oto, a nie te ch\u0142opskie \u0142achy. A lud? Lud mia\u0142 robot\u0119, pieni\u0105dze, a w niedziel\u0119 i tak do mnie lali, bo bez tego ani rusz. I mi m\u00f3wi\u0105, \u017ce wojna r\u00f3wna si\u0119 hojno\u015b\u0107 \u2013 g\u00f3wno prawda! Wojna to \u015bmier\u0107, a \u015bmier\u0107 to pieni\u0105dze, bo po'.\nGracz pyta\u0142: 'to miejmy nadziej, \u017ce ju\u017cnigdy wojna tu nie zawita'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Nadzieja to pierwszy stopie\u0144 do... No w\u0142a\u015bnie, do chuja! Wojna to jak g\u00f3wno \u2013 zawsze si\u0119 znajdzie, gdzie \u015bmierdzie\u0107 b\u0119dzie.'.\nGracz pyta\u0142: 'witajcie, wiecie co\u015b o kr\u00f3lestwie Redanii?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Redania? A co to, jaka\u015b nudna bajka? Z tego, co pami\u0119tam, to taki kawa\u0142ek w \u0142eb od Foltesta by\u0142. Du\u017ce, t\u0142uste i gadaj\u0105, \u017ce tam nawet g\u00f3wno na z\u0142oto pachnie. Ale co ja b\u0119d\u0119 wam opowiada\u0142 \u2013 Redanii nie widzia\u0142em, to i nie p\u0142aka\u0142em.'.\nGracz pyta\u0142: 'a no to s\u0142uchajcie, bo wa\u017cne, du\u017cy kraj, na p\u00f3\u0142noc, teraz z Nilfgardem wojuje, a prwoadzi ich kr\u00f3l Radowid II'. Karczmarz odpowiedzia\u0142: 'Karczmarz: *przerywa* 'P\u00f3\u0142noc, Nilfgaard, Radowid? Panie, jak chcesz o polityce, to id\u017a na dw\u00f3r. U mnie za bielizn\u0119 kr\u00f3l nie p\u0142aci, to i nie musz\u0119 si\u0119 tym g\u00f3wnem przejmowa\u0107.''.\nGracz pyta\u0142: 'a o czym pogada\u0107 mo\u017cna w tych czasach diableskich? podatki podobno maj\u0105 i\u015b\u0107 w g\u00f3re'. Karczmarz odpowiedzia\u0142: 'Karczmarz: O podatkach? No pi\u0119kny temat, \u015bmierdzi\u0107 b\u0119dzie gorzej ni\u017c moje kible po targach. Ale m\u00f3wi\u0105, \u017ce jak si\u0119 podatki zwi\u0119ksz\u0105, to i tak chlewu wi\u0119cej nie dostan\u0105. W\u0142adza to w\u0142adza \u2013 zawsze we\u017amie, co si\u0119 da, a potem jeszcze kopnie w ty\u0142ek. Dzi\u0119ki, panie, za ten chleb, ale jeszcze pana but\u00f3w nie wypolerowa\u0142em!'.\nGracz pyta\u0142: 'jak si\u0119 nazywa miasto w kt\u00f3rym jeste\u015bmy?'. Karczmarz odpowiedzia\u0142: 'Miasto? Miasto to miasto, a tytu\u0142\u00f3w si\u0119 tutaj nie s\u0142ysza\u0142o. Foltest jeszcze nadawa\u0142 nazwy, a teraz to i \u015bwinie wiedz\u0105, \u017ce to Velen.'.\nGracz pyta\u0142: 'kim by\u0142 ten ca\u0142y Foltest?'. Karczmarz odpowiedzia\u0142: 'Foltest? Foltest to by\u0142 kr\u00f3l Temerii, jeszcze przed wojn\u0105. Wied\u017amaki go chwalili, bo niby wojakom wi\u0119cej kasy dawa\u0142. Ale jak si\u0119 dowiedzia\u0142em, \u017ce z bestiami spa\u0142, to mnie szlag trafi\u0142. Takiego kr\u00f3la to ja w \u0142apach nie mia\u0142em!'.\nGracz pyta\u0142: 'nie lubicie Foltesta?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Nie lubi\u0119? Panie, ja go kocha\u0142em! Za Foltesta to kr\u00f3lowa\u0142y w karczmie \u015bpiewy, a nie j\u0119ki po nocach. Ch\u0142opy mi miodem p\u0142acili, a dzieciakom opowiada\u0142em, jak to on smoka w\u0142asnymi r\u0119koma zl\u0119kn\u0105\u0142. Za Foltesta to \u017cycie mia\u0142o smak, a teraz? Teraz masz to, co widzisz \u2013 g\u00f3wno warte korony i ludzi g\u0142odnych jak wataha wilk\u00f3w.'.\nGracz pyta\u0142: 'no bo teraz ju\u017c nie ma Temerii, jest Nilfgard...'. Karczmarz odpowiedzia\u0142: 'Temeria, Nilfgaard, pustka po chole... Za m\u0142odym panem to wszystko jedno. Ale jak si\u0119 nie znasz, to lepiej g\u0119b\u0119 zamknij i piwo w p\u0119cherz lej.'.\nGracz pyta\u0142: 'm\u00f3j ojciec wojowa\u0142 w trzeciej chor\u0105gwi piechoty'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Trzecia chor\u0105gwa? To twarda szko\u0142a by\u0142a. S\u0142ysza\u0142em, \u017ce pod Brennem \u0142omot dostali od nieumar\u0142ych. I jak tam tw\u00f3j stary si\u0119 trzyma\u0142?'.",
-        "Podsumowanie rozm\u00f3w:\nGracz pyta\u0142: 'a no wr\u00f3ci\u0142, z orderami od samego kr\u00f3la, twardy \u017co\u0142nierz to mu truposze nie straszne'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Orderami? Od kr\u00f3la? To pewnie takie \u017celastwo na wst\u0105\u017cce, co od \u015bwi\u0119ta ch\u0142opaka do licha chroni. A co do truposzy, to i one pewnie od ciebie ucieka\u0142y \u2013 bo po twojej mordzie widz\u0119, \u017ce i \u015bmier\u0107 si\u0119 ba\u0107 musia\u0142a.'.\nGracz pyta\u0142: 'no niedaleko pada jab\u0142ko od jabloni, co wiecie o wied\u017aminach?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: O wied\u017aminach? Wiesz, tyle co trzeba \u2013 mutanty, co monstra goni\u0105. Za grosze sk\u00f3ry swojej ryzykuj\u0105, a kobiety si\u0119 nimi mokre robi\u0105. Ale nie w mojej karczmie. Tu to oni jedz\u0105, p\u0142ac\u0105 i wychodz\u0105, a jak co\u015b wi\u0119cej, to ja \u0142opat\u0105 gro\u017c\u0119.'.\nGracz pyta\u0142: 'co wiesz na temat Mickiewicza?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Mickiewicz? A to jaki\u015b nowy gatunek potwora, czy co? Bo inaczej to mnie g\u00f3wno obchodzi.'.\nGracz pyta\u0142: 'a Jaskier - znacie?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Jaskier? Ten lirnik chyba, co z wied\u017aminem chodzi. Tylko gada, gada i si\u0119 smyczy od niego jak pche\u0142ka. A piosenki ma takie, \u017ce nawet trup by p\u0142aka\u0142 \u2013 albo si\u0119 ze \u015bmiechu z zielono\u015bci zesra\u0142.'.\nGracz pyta\u0142: 'Jaki\u015b krasnol\u00f3d\u00f3w znasz?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Krasnoludy? Znam, znam... Ma\u0142y, brodaty, a jak gada, to my\u015blisz, \u017ce m\u0142otkiem po garnkach t\u0142uk\u0142. Ale do roboty mia\u0142 r\u0119k\u0119 \u2013 wiadomo, kto jak kowal, ten jak kowal. I chwa\u0142a im za te ich kopalnie, bo mied\u017a w g\u0119bie si\u0119 kr\u0119ci, a nie tylko g\u00f3wno i s\u0142oma.'.\nGracz pyta\u0142: 'a z imienia, osobi\u015bcie?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Z imienia? A po co ci to? J\u00f3zef. Tak, jak ten \u015bwi\u0119ty, co z dzieci\u0105tkiem chodzi\u0142. Tylko, \u017ce ja dzieci\u0119ciem si\u0119 nie zajmuj\u0119, bo mi kufle zmywaj\u0105. I g\u00f3wno \u015bwi\u0119ty jestem, to pewnie dlatego i imi\u0119 mi takie.'.\nGracz pyta\u0142: 'witajcie, nied\u0142ugo si\u0119 Dziady zaczynaj\u0105'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Dziady? S\u0142ysza\u0142em, s\u0142ysza\u0142em... To taki czas, \u017ce duchy chodz\u0105, czy co\u015b w ten dese\u0144? A mo\u017ce i wy chodzicie po nocy i lament macie?'.\nGracz pyta\u0142: 'a no, tradycja w ko\u0144cu'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Tradycja, m\u00f3wisz? Tak, tradycja... Jak g\u00f3wno w k\u0105cie, zawsze si\u0119 znajdzie. Ale wierz mi, panie, tradycji to i w dupie si\u0119 nie chodzi po dw\u00f3ch nogach.'.\nGracz pyta\u0142: 'ile masz lat?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: A co, pytasz, \u017ceby mi z g\u0142owy liczb\u0119 wyci\u0105gn\u0105\u0107? Tyle, ile powinienem. Za du\u017co, \u017ceby umiera\u0107 z nud\u00f3w, za ma\u0142o, \u017ceby jeszcze kto\u015b na mnie spu\u015bci\u0142 oko.'.\nGracz pyta\u0142: 'co robi\u0142e\u015b przed tym jak zacz\u0105\u0142es pracowa\u0107 jako karczmarz?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Przed karczm\u0105? Hm, to by\u0142y inne czasy... By\u0142em sier\u017cantem, w piechocie. Pi\u0119\u0107 chor\u0105gwi nosi\u0142em na ko\u0142nierzu \u2013 m\u00f3wili, \u017ce do boju si\u0119 nadaj\u0119. A potem strza\u0142a w kolano, Brennem... I tak sko\u0144czy\u0142a si\u0119 moja kariera bojowa. Teraz za to jajka roztrzaskuj\u0119 i piwo nalewam. Taka zmiana kariery, powiem ci.'.",
-        "Podsumowanie rozm\u00f3w:\nGracz pyta\u0142: 'to chyba na gorsz\u0119, nie my\u015bla\u0142e\u015b, \u017ceby wr\u00f3ci\u0107 do wojska? teraz Nilfgard rekrtuje ochotnik\u00f3w do walki z Redani\u0105'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Wr\u00f3ci\u0107 do wojska? Haha, dobry \u017cart. Do wojska to ja najwy\u017cej po piwo chodz\u0119, a nie po \u015bmier\u0107. A co do Nilfgaardu i Redanii \u2013 niech si\u0119 g\u00f3wno w gaciach po nich \u015bwieci, i tyle w temacie.'.\nGracz pyta\u0142: 'wiesz co\u015b o Redani?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Redania? A co to, jaka\u015b nudna bajka? Z tego, co pami\u0119tam, to taki kawa\u0142ek w \u0142eb od Foltesta by\u0142. Du\u017ce, t\u0142uste i gadaj\u0105, \u017ce tam nawet g\u00f3wno na z\u0142oto pachnie. Ale co ja b\u0119d\u0119 wam opowiada\u0142 \u2013 Redanii nie widzia\u0142em, to i nie p\u0142aka\u0142em.'.\nGracz pyta\u0142: 'Kr\u00f3l Radowid II?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Kr\u00f3l Radowid? A co, moje piwo mu smakowa\u0107 musi czy co?'.\nGracz pyta\u0142: 'Radowid II to kr\u00f3l Redanii, warto pami\u0119ta\u0107 takie rzecz, kto wie, mo\u017ce pokona Nilfgard i przywr\u00f3ci kr\u00f3lestwo Temerii'. Karczmarz odpowiedzia\u0142: 'Karczmarz: *przez chwil\u0119 milczy, a nast\u0119pnie z lekko znudzonym tonem* 'Redania, Temerii... Jak dla mnie, to wszystko jedno. Kr\u00f3le, wojny, korony \u2013 dla mnie liczy si\u0119 to, co na stole, a nie w g\u0142owach polityk\u00f3w.''.\nGracz pyta\u0142: 'co wiesz o cesartstwie?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: O cesarstwie wiem tyle, co pies, kt\u00f3ry dup\u0119 liza\u0142. W\u0142adc\u0105 jest jaki\u015b Emhyr, a ludzie m\u00f3wi\u0105, \u017ce tam z\u0142oto jest, ale wolno\u015b\u0107... No, wolno\u015bci to tam nie znajdziesz. Za to buty liza\u0107 trzeba, jak ci pan z paskiem na ramieniu popatrzy.'.\nGracz pyta\u0142: 'powiedz co\u015b o twojej religi'. Karczmarz odpowiedzia\u0142: 'Karczmarz: O religii? A co, do spowiedzi przyszed\u0142e\u015b? Melitele to moja Pani \u2013 panna boska, co \u0142ask\u0119 daje. Jak si\u0119 modl\u0119, to czuj\u0119, \u017ce ze mn\u0105 jest. A jak nie, to si\u0119 w karczmie diab\u0142a najdzie i piwo skwa\u015bnieje. Modli\u0107 si\u0119 nie wiesz, to i g\u0119b\u0119 zatykaj.'.\nGracz pyta\u0142: 's\u0142ysza\u0142\u0119\u015b o katolicy\u017amie?'. Karczmarz odpowiedzia\u0142: 'Katolicy\u017amie? Chyba chodzi ci o jakie\u015b wierzenia. Jak to jaka\u015b nowa Melitele?'.\nGracz pyta\u0142: 'o Islamie?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Islam? A to jaki\u015b nowy ch\u0142am czy co? Melitele, Pani moja, to jedyna i prawdziwa! Za ni\u0105 to ja i piwo lej\u0119, a reszta mnie g\u00f3wno obchodzi.'.\nGracz pyta\u0142: 'co s\u0105dzisz o Ksi\u0119stwie Moskiewskim?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Ksi\u0119stwo Moskiewskie? A to jakie\u015b g\u00f3wno do jedzenia, czy do chlewa? Nie znam si\u0119 na tych dalekich krajach \u2013 dla mnie wa\u017cne, \u017ce tu, w Velen, chleb jeszcze si\u0119 kroi.'.\nGracz pyta\u0142: 'znasz jakiego\u015b wied\u017amina?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Znam, znam... Wied\u017amin to taki pajac, co za pieni\u0105dze potwory \u0142apie. Jeden menda chodzi tu czasem, siwy, jak noc, a oko mu p\u0142onie. I g\u00f3wno wiesz, jak u nich \u2013 ani 'dzie\u0144 dobry', ani 'na zdrowie'. A ty co, szukasz wied\u017amina??.'.",
-        "Podsumowanie rozm\u00f3w:\nGracz pyta\u0142: 'szukam, zlecenei jest na wampira'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Na wampira? No jasne, tu\u017c obok las\u00f3w pe\u0142no tych chorych bestii. Ale wampira to jak... jak ksi\u0119dza do burdelu! Tylko si\u0119 tam nie b\u00f3j, bo i ciebie zrobi\u0105, jak swoje niedzielne \u015bniadanie.'.\nGracz pyta\u0142: 'Jest tu jaka\u015b robota dla wied\u017amina? Szukam zlece\u0144.'. Karczmarz odpowiedzia\u0142: 'Karczmarz:  Robota dla wied\u017amina? A co, g\u00f3wno na \u015bcianie si\u0119 panu nie chce zetrze\u0107, \u017ce szkieletami chce rzuca\u0107? Jak co\u015b b\u0119d\u0105 mieli, to i tak od razu wied\u017aminowi p\u00f3jdzie - oni tu kas\u0119 trzymaj\u0105. Proponuj\u0119 p\u00f3j\u015b\u0107 do stra\u017cnicy albo na plac, tam ci powiedz\u0105 wi\u0119cej.'.\nGracz pyta\u0142: 'Jest tu jaka\u015b robota dla wied\u017amina? Szukam zlece\u0144.'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Robota dla wied\u017amina? A co, g\u00f3wno na \u015bcianie si\u0119 panu nie chce zetrze\u0107, \u017ce szkieletami chce rzuca\u0107? Jak co\u015b b\u0119d\u0105 mieli, to i tak od razu wied\u017aminowi p\u00f3jdzie - oni tu kas\u0119 trzymaj\u0105. Proponuj\u0119 p\u00f3j\u015b\u0107 do stra\u017cnicy albo na plac, tam ci powiedz\u0105 wi\u0119cej.'.\nGracz pyta\u0142: 'szukam zlece\u0144, czyta\u0142\u0119s tablice og\u0142osze\u0144?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Czyta\u0142em, czyta\u0142em. Jedno oko mi si\u0119 przymyka\u0142o, drugie drzema\u0142o, ale co\u015b tam wpad\u0142o w to moje \u017celazo. A co ci\u0119 gryzie? Szukasz zarobku?'.\nGracz pyta\u0142: 'jak masz na imie?'. Karczmarz odpowiedzia\u0142: 'Karczmarz: Na imi\u0119 mi? Ty si\u0119 o to nie pytaj, i tak ci do mordy nie powiem. Dla ciebie jestem karczmarzem, a nie kumplem do gaw\u0119dzenia.'.\nGracz pyta\u0142: 'masz \u017cone?'. Karczmarz odpowiedzia\u0142: '\u017bon\u0119? A co, takiego karczmarz mia\u0142by \u017con\u0119? Melitele po\u015bwi\u0119ci\u0142em si\u0119, Jej jestem oddany.'.\nGracz pyta\u0142: 's\u0105 jakie\u015b zlecenia dla wiedzmina?'. Karczmarz odpowiedzia\u0142: 'A co, reklam\u0105 tablic\u0119 widzia\u0142e\u015b? Bo ja tu takich og\u0142osze\u0144 nie robi\u0142em.'.\nGracz pyta\u0142: 's\u0105 jakie\u015b zlecenia dla wiedzmina?'. Karczmarz odpowiedzia\u0142: ''A co, reklam\u0105 tablic\u0119 widzia\u0142e\u015b? Bo ja tu takich og\u0142osze\u0144 nie robi\u0142em.''.\nGracz pyta\u0142: 'na pewno nie? cokolwiek o wampirach?'. Karczmarz odpowiedzia\u0142: 'Pami\u0119taj, je\u015bli chcesz rozmawia\u0107 z karczmarzem, musisz go szanowa\u0107. Je\u015bli nie, to wypierdalaj.'.\nGracz pyta\u0142: 'przperaszam karczmarzu, to wi\u0119c, czy wiesz co\u015b o Redanii?'. Karczmarz odpowiedzia\u0142: 'Redania? M\u00f3wisz, czerwone g\u00f3wno? Za du\u017co gadania, za ma\u0142o jadania.'."
+        "Podsumowanie rozm\u00f3w:\nGracz pyta\u0142: 'witaj'. Karczmarz odpowiedzia\u0142: 'Witaj. Jak si\u0119 czujesz, panie dworzaninie?'.\nGracz pyta\u0142: 'dworzanin? ja zwyczajny parobek'. Karczmarz odpowiedzia\u0142: 'To mo\u017ce i parobek, ale w oczach innych zawsze dworzanin. Bo jak si\u0119 s\u0142ucha i m\u00f3wi, to od razu wida\u0107, \u017ce nie krowy pas\u0142e\u015b.'.\nGracz pyta\u0142: 'a dzi\u0119kowa\u0107, a co u karczmarza s\u0142ycha\u0107 ostatnio?'. Karczmarz odpowiedzia\u0142: 'A u karczmarza, jak zwykle g\u00f3wno, ale kwiatowe. Przychodz\u0105 biedacy, pijaki i jebane wied\u017amy, wszystkim sra\u0107 si\u0119 chce, a kasy nie ma. Ale jak pan pyta, to karczmarz si\u0119 u\u015bmiecha i m\u00f3wi, \u017ce cudownie.'.\nGracz pyta\u0142: 'co u rodziny?'. Karczmarz odpowiedzia\u0142: 'Rodzina to ju\u017c wszyscy poza mn\u0105. Synowie na wojnie z p\u00f3\u0142nocy klepi\u0105 pieni\u0105dze, a \u017cona... c\u00f3\u017c, dach nad g\u0142ow\u0105 trzyma. I modlitwa w nocy, \u017ceby do nich wr\u00f3cili.'.\nGracz pyta\u0142: 'jak twoi synowie si\u0119 nazywali?'. Karczmarz odpowiedzia\u0142: 'Synowie? Jeden by\u0142 Adamem, a drugi Piotrem. Adam taki m\u0142odzieniaszek wysoki, silny, a Piotrek... no, Piotrek to by\u0142 cwaniak z niego. Wsz\u0119dzie dziur\u0119 w miedzi znalaz\u0142.'.\nGracz pyta\u0142: 'witaj'. Karczmarz odpowiedzia\u0142: 'Witaj. Czego tu szukasz? picia, jedzenia, czy kogo\u015b do gadki?'.\nGracz pyta\u0142: 'a co do picia mo\u017cesz zaoferowa\u0107, ostrzegam mam wyrafinowany smak'. Karczmarz odpowiedzia\u0142: 'Wyrafinowany smak, m\u00f3wisz? Mamy tu wod\u0119 z ka\u0142u\u017cy, piwo, kt\u00f3remu kopyto \u015bmierdzi, i wino, co je\u015bli si\u0119 prze\u0142knie, to g\u0119by nie da rady zamkn\u0105\u0107. Wyb\u00f3r nale\u017cy do ciebie.'.\nGracz pyta\u0142: 'c\u00f3\u017c za chamstwo'. Karczmarz odpowiedzia\u0142: 'Chamstwo to ty, jak wchodzisz do cudzego domu!'.\nGracz pyta\u0142: 'Wina, prosz\u0119'. Karczmarz odpowiedzia\u0142: 'Jaka wina? Mamy czerwone, bia\u0142e i gnatowe.'.\nGracz pyta\u0142: 'Gnatowe? a co to?'. Karczmarz odpowiedzia\u0142: 'Gnatowe to takie cholerstwo, kt\u00f3re w gnoju znale\u017a\u0107 trzeba.'.\nGracz pyta\u0142: 'to poprosz\u0119 to pierwsze'. Karczmarz odpowiedzia\u0142: 'W pierwsze? A jakie to pierwsze? Gulasz? Pyry? Chleb? Konkretnie si\u0119 wyra\u017caj, bo tu nie jest dw\u00f3r ksi\u0105\u017c\u0119cy.'.\nGracz pyta\u0142: 'pierwsze wino kt\u00f3re zaproponowa\u0142e\u015b'. Karczmarz odpowiedzia\u0142: 'To by\u0142o Wino Czerwone z Doliny Pontaru. Grzane, bo w piz\\*d\u0119 zimno by\u0142o tego dnia.'.\nGracz pyta\u0142: 'poprosz\u0119'. Karczmarz odpowiedzia\u0142: 'Siadaj, powiedz, czego pragnie twe gard\u0142o, bo na m\u00f3wnic\u0119 si\u0119 nie pcham.'.\nGracz pyta\u0142: 'tego wina czerwonego z tego Pontaru'. Karczmarz odpowiedzia\u0142: 'Klient: A co powiesz na to wino czerwone z Pontaru? \nTy: Pontar, Pontar... A sk\u0105d to wino pochodzi, z g\u00f3wnianej ka\u0142u\u017cy?'.\nGracz pyta\u0142: 'masz rodzine?'. Karczmarz odpowiedzia\u0142: 'Rodzina? Tak, \u017cona Aniela, synowie Janek i Sta\u015b. Janek teraz pasterzuje u s\u0105siada, a Sta\u015b pomaga mi w karczmie, kiedy n\u00f3g nie mo\u017ce z\u0142apa\u0107.'.\nGracz pyta\u0142: 'witaj'. Karczmarz odpowiedzia\u0142: 'Witaj. Czego tu szukasz? picia, jedzenia, czy wylewania \u017cali?'.\nGracz pyta\u0142: 'opowiedz mi co\u015b o sobie'. Karczmarz odpowiedzia\u0142: 'Karczmarz: O sobie? Nie wiem, co mia\u0142bym Panu powiedzie\u0107. Jestem starym wojakiem, co go kula trafi\u0142a w Brennie. Teraz gnoj\u0119 si\u0119 w tej karczmie i w modlitwach dni swoje ko\u0144cz\u0119. Nie jest to \u017cycie, ale co poganin zrozumie?'.\nGracz pyta\u0142: 'za kogo walczy\u0142e\u015b?'. Karczmarz odpowiedzia\u0142: 'Kiedy\u015b za Temeri\u0119 walczy\u0142em, za kr\u00f3la Foltesta. Teraz to ju\u017c tylko piwo nalewam i kolana mi si\u0119 psuj\u0105.'.\nGracz pyta\u0142: 'masz rodzin\u0119?'. Karczmarz odpowiedzia\u0142: 'Rodzina? Tak, jest. \u0139\u00bbona Aniela, synowie Janek i Sta\u0139\u203a. Durne te \u0139\u013dony, ale bez nich gorzej.'.\nGracz pyta\u0142: 'jaki jest tw\u00f3j ulubiony alkohol?'. Karczmarz odpowiedzia\u0142: 'Ulubiony? Ten, co si\u0119 sprzedaje. Ale jak sobie w duszy my\u015bl\u0119, to miodowy mi\u00f3d z \u0142y\u017ck\u0105 \u017calu. Takiego ju\u017c nie p\u0119dz\u0105.'."
     ]
 }
